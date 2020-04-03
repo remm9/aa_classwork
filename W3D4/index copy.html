@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chili Recipe recipe by Chris and Alex">
+    <title>Document</title>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-12345678-9', 'auto');
+        ga('send', 'pageview');
+        <a src="https://assets.aaonline.io/fullstack/html-css/assets/external_javascript_example.js">App Academy</a>
+    
+
+    </script>
+</head>
+<body>
+        <header>
+        <h1 id="title">Chili Recipe</h1>
+        <ul>
+            <li><a href="#Ingredients">Ingredients</a></li>
+            <li><a href="#instructions">Intructions</a></li>
+            <li><a href="#Pro Tips">Pro Tips</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2>Descriptions</h2>
+        <p>Shakshukah is a dish of eggs poached in a sauce of tomatoes, chili peppers, and onions, often spiced with cumin.</p>
+        <a href="https://en.wikipedia.org/wiki/Shakshouka"></a>
+        <img src="http://toriavey.com/images/2010/07/Shakshuka-Close-640x480.jpg" alt="">
+        <h2 id="Ingredients">Ingredients</h2>
+        <ul>
+            <li>1 tbsp olive oil</li>
+            <li>1/2 medium brown or white onion, peeled and diced</li>
+            <li>Pinch of cayenne pepper (or more to taste-- spicy!)</li>
+            <li>Pinch of sugar (optional, to taste)</li>
+            <li>Salt and pepper to taste</li>
+            <li>5-6 eggs</li>
+            <li>1/2 tbsp fresh chopped parsley (optional, for garnish)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Directions</h2>
+        <ol>
+            <li>1) chop up all ingredients</li>
+            <li>heat up olive oil in a pan</li>
+            <li>Add tomatoes and tomato paste to pan, stir till blended.</li>
+            <li>Add spices and sugar, stir well, and allow mixture to simmer over medium heat for 5-7 minutes</li>
+        </ol>
+    </section>
+<!-- 
+    <section>
+        <form action="/reviews">
+            <label for="name">
+                <input id ="name" type="text" name="name">
+            </label>
+            <label for="Rating"> Rating
+                <input type="Rating">
+                <input type="radio" name="rating" value="1">
+            </label>
+        </form>
+    </section> -->
+
+    <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+        <label for="rating">Rating</label>
+        1<input type="radio" name="rating" value="1" checked="">
+        2<input type="radio" name="rating" value="2">
+        3<input type="radio" name="rating" value="3">
+        4<input type="radio" name="rating" value="4">
+        5<input type="radio" name="rating" value="5">
+        <label for="expertise">Cooking Expertise</label>
+        <select id="expertise" name="expertise">
+            <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+            <option value="Sometimes Cook">Sometimes Cook</option>
+            <option value="Cook Everyday">Cook Everyday</option>
+            <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+            <option value="Professional Chef">Professional Chef</option>
+        </select>
+        <label>Review
+            <textarea name="review" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit" value="Submit Review">
+    </form>
+    
+    <footer>
+        <p>
+            "Original Recipe by Chris and Alex"
+            <a href="http://toriavey.com/toris-kitchen/2010/07/summer-2010-travel-blog-shakshuka"></a>
+        </p>
+    </footer>     
+</body>
+</html>
+
