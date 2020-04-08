@@ -67,14 +67,19 @@ class KnightPathFinder
 end
 
 
+# if $PROGRAM_NAME == __FILE__
+  # kpf = KnightPathFinder.new([1, 0])
+  # p kpf.find_path([7, 7])
+# end
 
-# knight_1 = KnightPathFinder.new([7, 7])
-# knight_1.build_move_tree
+
+knight_1 = KnightPathFinder.new([7, 7])
+knight_1.build_move_tree
 # p knight_1.starting_node.children.map { |child| child.value }
 # p "------"
-# p knight_1.find_path([1, 1])
+knight_1.find_path([1, 1])
 # p"-----"
-# p knight_1.trace_path_back
+p knight_1.trace_path_back
 
 
 # Phase II: #build_move_tree
