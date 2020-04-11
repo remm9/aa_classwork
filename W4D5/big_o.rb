@@ -32,15 +32,15 @@ list = [ 0, 3, 5, 4, -5, 10, 1, 90 ]
 
 
 # 
-# def largest_contiguous_subsum(arr) #O(n^3)
-#   result = []
-#   (0...arr.length).each do |i|
-    # (i...arr.length).each do |j|
-    #   result << arr[i..j].reduce(:+) #O(n)
-    # end
-#   end
-#   result.max
-# end
+def largest_contiguous_subsum(arr) #O(n^3)
+  result = []
+  (0...arr.length).each do |i|
+    (i...arr.length).each do |j|
+      result << arr[i..j].reduce(:+) #O(n)
+    end
+  end
+  result.max
+end
 # 
 def largest_contiguous_subsum(arr)
     
