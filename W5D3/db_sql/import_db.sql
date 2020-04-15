@@ -49,10 +49,10 @@ CREATE TABLE replies (
 CREATE TABLE question_likes(
     id INTEGER PRIMARY KEY,
     question_id INTEGER NOT NULL,
-    author_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
 
     FOREIGN KEY (question_id) REFERENCES questions(id)
-    FOREIGN KEY (author_id) REFERENCES users(id)
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 INSERT INTO
@@ -70,13 +70,15 @@ VALUES
 INSERT INTO
     question_follows(user_id, question_id)
 VALUES
-    ((SELECT id FROM users WHERE fname = 'Arthur' AND lname = 'Miller') , (SELECT id FROM questions WHERE title = 'logistics')),
-    ((SELECT id FROM users WHERE fname = 'Eugene' AND lname = 'O''Neill'), (SELECT id FROM questions WHERE title = 'admitions'));
+    ((SELECT id FROM users WHERE fname = 'Arthur' AND lname = 'Miller') , 
+        (SELECT id FROM questions WHERE title = 'logistics')),
+    ((SELECT id FROM users WHERE fname = 'Eugene' AND lname = 'O''Neill'), 
+        (SELECT id FROM questions WHERE title = 'admisions'));
 
 INSERT INTO
     replies(question_id, parent_reply_id, author_id, body)
 VALUES
-    (( SELECT id FROM questions WHERE title = logistics), 
+    (( SELECT id FROM questions WHERE title = 'logistics'), NULL, 
     (SELECT id FROM users WHERE fname = 'Arthur' AND lname = 'Miller'), 'When does the class start?');
 
 INSERT INTO
