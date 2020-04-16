@@ -1,0 +1,24 @@
+
+
+html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
+    margin: inherit;
+    padding: inherit;
+    border: inherit;
+    font: inherit
+}
+
+.ingredients-list {
+    list-style: none;
+}
+
+body {
+    line-height: 1.5; 
+}
+
+header img {
+    width: inherit;
+}
+
+section figure img {
+    width: 100%;
+}
