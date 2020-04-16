@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_04_16_205458) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    index_shortened_urls_on_short_url"
+    index_shortened_urls_on_short_url
   end
 
   create_table "users", force: :cascade do |t|
