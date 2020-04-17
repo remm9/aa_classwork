@@ -1,0 +1,5 @@
+
+
+class AnswerResponse < ApplicationRecord
+
+end
