@@ -6,5 +6,6 @@
 #  username :string           not null
 #
 class User < ApplicationRecord 
+    
  
 end
