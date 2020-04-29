@@ -9,6 +9,6 @@
 #
 class Band < ApplicationRecord
 
-    
+       
 
 end
