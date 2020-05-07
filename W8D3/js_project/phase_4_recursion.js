@@ -75,4 +75,24 @@ const fibonacci = (n) => {
     return result
 }
 
-console.log(fibonacci(5))
+// console.log(fibonacci(5))
+
+const deepDup = (array) => {
+    if (array.length <= 1) {
+        return array 
+    }
+
+    let result = []
+    array.map((el) => {
+        if (el instanceof Array) {
+            result.push(deepDup(el))
+        } else {
+            result.push(el)
+        }
+    })
+
+    return result
+
+}
+
+console.log(JSON.stringify(deepDup([2, 4, [3, [7, 9, [3]], 3]])))
