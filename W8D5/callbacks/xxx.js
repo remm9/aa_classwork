@@ -1,0 +1,1 @@
+setInterval(() => console.log(i += 1), 1000);
