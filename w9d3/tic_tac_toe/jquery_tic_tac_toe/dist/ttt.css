@@ -1,0 +1,29 @@
+ul {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    height: 300px;
+    margin: 30px auto;
+  
+
+}
+
+
+
+li {
+    display: flex;
+    width: 90px;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    background-color: lightgray;
+
+}
+
+li:hover {
+    background-color: lightgreen;
+}
+
+
+
+
+
