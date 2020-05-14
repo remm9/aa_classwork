@@ -1,0 +1,15 @@
+/* PHASE 11: Icons */
+.icon-comment {
+
+}
+
+[class*="icon-"]{
+    /* background-image: url(".././images/sprite.png") ; */
+    background-image: url("//img.icons8.com/plasticine/2x/speech-bubble-with-dots.png") ;
+    display: inline-block;
+    width: 25px;
+    height: 0px;
+    overflow: hidden;
+    padding-top: 25px;
+}
+/* https://img.icons8.com/plasticine/2x/speech-bubble-with-dots.png */
