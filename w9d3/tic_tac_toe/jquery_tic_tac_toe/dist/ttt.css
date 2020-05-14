@@ -4,8 +4,6 @@ ul {
     flex-wrap: wrap;
     height: 300px;
     margin: 30px auto;
-  
-
 }
 
 
@@ -16,7 +14,6 @@ li {
     flex-wrap: wrap;
     border: 3px solid black;
     background-color: lightgray;
-
 }
 
 li:hover {
